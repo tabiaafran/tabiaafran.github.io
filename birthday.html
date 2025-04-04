@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Bou</title>
+    <link rel="stylesheet" href="birthday.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cake Section -->
+        <div class="cake" onclick="showMessage()">
+            <div class="flames">🔥🔥🔥</div>
+            <h1 class="message">🎂 Click the cake to read my message 🎂</h1>
+        </div>
+
+        <!-- Message Section -->
+        <div id="messageBox" class="messageBox">
+            <p>Dear wife,</p>
+            <p>On this special day, I just want you to know how deeply loved and cherished you are. Every moment with you feels like magic, every smile of yours lights up my world.</p>
+            <p>Happy Birthday, my beautiful queen. May your day be filled with softness, serenity, and love – just like you.</p>
+            <p>With all my heart,</p>
+            <p>— Tomar Jamai, Afran</p>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function showMessage() {
+            document.getElementById('messageBox').style.display = 'block';
+            document.getElementById('messageBox').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
